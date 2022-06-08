@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <title>Контрольное Тестирование</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+
+        function validate_form ( )
+        {
+            valid = true;
+
+            if ( document.contact_form.q1.value == "" )
+            {
+                alert ( "Пожалуйста заполните все поля с ответами." );
+                valid = false;
+            }
+            if ( document.contact_form.q2.value == "" )
+            {
+                alert ( "Пожалуйста заполните все поля с ответами." );
+                valid = false;
+            }
+            if ( document.contact_form.q3.value == "" )
+            {
+                alert ( "Пожалуйста заполните все поля с ответами." );
+                valid = false;
+            }
+            if ( document.contact_form.q4.value == "" )
+            {
+                alert ( "Пожалуйста заполните все поля с ответами." );
+                valid = false;
+            }
+            if ( document.contact_form.q5.value == "" )
+            {
+                alert ( "Пожалуйста заполните все поля с ответами." );
+                valid = false;
+            }
+            if ( document.contact_form.q6.value == "" )
+            {
+                alert ( "Пожалуйста заполните все поля с ответами." );
+                valid = false;
+            }
+            if ( document.contact_form.q7.value == "" )
+            {
+                alert ( "Пожалуйста заполните все поля с ответами." );
+                valid = false;
+            }
+            if ( document.contact_form.q8.value == "" )
+            {
+                alert ( "Пожалуйста заполните все поля с ответами." );
+                valid = false;
+            }
+
+
+            return valid;
+        }
+    </script>
+</head>
+    <style>
+        body {
+            background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #352A3B);
+        }
+        hr {
+            background-color: black; /* Цвет линии для остальных браузеров */
+            height: 2px; /* Толщина линии */
+        }
+    </style>
+
+<body>
+<P><B><h1><center>Тестирование по теме "Знание языка разметки HTML"</center></h1></B></P>
+<p><h3>В данном тесте вам предлагается ответить на вопросы по заданной теме</h3></p>
+<p><h3>Правильный вариант ответа в каждом задании только один!</h3></p>
+<hr>
+<ul>
+    <li><h4>Вы должны ответить на все вопросы представленные в тестировании</h4></li>
+    <li><h4>Нажмите кнопку "Отправить", для того чтобы отправить все ваши ваши ответы на проверку</h4></li>
+    <li><h4>На результирующей странице вам будет предоставлен список предложенных в тесте вопросов с ответами пользователя и правильными ответами,<br>
+        количеством баллов за каждый ответ и общими итоговыми баллами за ваш тест.</h4></li>
+</ul>
+<hr>
+<form name="contact_form" method="post" action="test.php" onsubmit="return validate_form ();">
+    <button type="submit" href = "test.php">Начать тестирование</button>
+</form>
+<h4><li class="links"><a href = "http://www2.cs.vsu.ru/~denisov_k_r/">Моя основная страница.</a></li></h4>
+</body>
+</html>

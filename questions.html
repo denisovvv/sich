@@ -1,0 +1,59 @@
+<script type="text/javascript">
+
+  function validate_form ( )
+  {
+    valid = true;
+
+    if ( document.contact_form.q1.value == "" )
+    {
+      alert ( "Пожалуйста заполните все поля с ответами." );
+      valid = false;
+    }
+    if ( document.contact_form.q2.value == "" )
+    {
+      alert ( "Пожалуйста заполните все поля с ответами." );
+      valid = false;
+    }
+    if ( document.contact_form.q3.value == "" )
+    {
+      alert ( "Пожалуйста заполните все поля с ответами." );
+      valid = false;
+    }
+    if ( document.contact_form.q4.value == "" )
+    {
+      alert ( "Пожалуйста заполните все поля с ответами." );
+      valid = false;
+    }
+    if ( document.contact_form.q5.value == "" )
+    {
+      alert ( "Пожалуйста заполните все поля с ответами." );
+      valid = false;
+    }
+    if ( document.contact_form.q6.value == "" )
+    {
+      alert ( "Пожалуйста заполните все поля с ответами." );
+      valid = false;
+    }
+    if ( document.contact_form.q7.value == "" )
+    {
+      alert ( "Пожалуйста заполните все поля с ответами." );
+      valid = false;
+    }
+    if ( document.contact_form.q8.value == "" )
+    {
+      alert ( "Пожалуйста заполните все поля с ответами." );
+      valid = false;
+    }
+
+
+    return valid;
+  }
+</script>
+
+<div class="element">
+  <p><label><input name="q1" type="radio" value="c">Текст, заключенный в тэг, будет расположен по правому краю страницы</label></p>
+</div>
+
+<form name="contact_form" method="post" action="answer.php" onsubmit="return validate_form ();">
+  <button type="submit" href = "answer.php">Ответить</button>
+</form>
