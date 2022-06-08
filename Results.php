@@ -13,7 +13,7 @@ for($num = 0; $num < count($array); $num++) {
     }
 }
 $showResults = false;
-//Пробежать по всем радиокнопкам и посмотреть есть ли хоть один ответ, если есть, то показать результаты теста
+
 for($i = 0; $i < count($keys); $i++) {
     if(isset($_POST['q'.$i])) {
         $showResults = True;
