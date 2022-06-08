@@ -11,16 +11,20 @@
 <form method="post" action="results.php">
     <?php
         $filename = __DIR__.'/questions';
-        $array = file($filename);
+        $questions = file($filename);
 
-        $filename1 = __DIR__.'/answers';
-        $array1 = file($filename1);
+        $filename1 = __DIR__.'/trueAnswers';
+        $trueAnswers = file($filename1);
 
-        for($i = 0; $i < count($array); $i++){
-            echo "<p>", $array[$i], "</p>";
-            for($j = $i * 3; $j < $i * 3 + 3; $j++) {
+        $answerTextFile = __DIR__.'/answers';
+        $answerText = file($answerTextFile);
+        $k = 0;
+        for ($i = 0; $i < count($questions); $i++){
 
-                echo '<br><input type="radio" name="q'.$i.'" value="q'.$i.$array1[$j][0].'" /></br>'.$array1[$j];
+            echo "<p>".$questions[$i]."</p><br>";
+
+            for ($j = 0; $j < 3; $j++) {
+                echo '<input type="radio" name="q'.$i.'" value="q'.$i.$j.'"/>'.$answerText[$k++].'<br>';
             }
         }
     ?>
